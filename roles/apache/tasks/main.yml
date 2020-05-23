@@ -11,6 +11,10 @@
     src: httpd.conf.j2
     dest: /etc/httpd/conf/httpd.conf
 
+
+- name: Enabling se linux
+  selinux:
+    state: disabled
  
 - name: restarting the service
   service:
