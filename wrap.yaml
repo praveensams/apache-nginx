@@ -1,0 +1,10 @@
+- hosts: dev
+  become: true
+  serial: 1
+
+  roles:
+    - role: "apache"
+      vars:
+        ports: 9090
+        need_vim: "yes"
+    - "nginx"

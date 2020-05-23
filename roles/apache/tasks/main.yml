@@ -1,0 +1,22 @@
+---
+# tasks file for apache
+- name: installing packages
+  package:
+    name: ["httpd","httpd-tools"]
+    state: "installed"
+
+
+- name: copying the configuraiton file
+  template:
+    src: httpd.conf.j2
+    dest: /etc/httpd/conf/httpd.conf
+
+ 
+- name: restarting the service
+  service:
+    name: "httpd"
+    state: "restarted"
+
+- name: Importing yaml
+  import_tasks: sam.yaml
+  when: need_vim == "yes"  and ansible_os_family == "RedHat"
