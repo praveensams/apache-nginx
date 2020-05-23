@@ -1,4 +1,4 @@
-- hosts: "{{server}}"
+- hosts: "localhost"
   become: true
   serial: 1
   force: yes
