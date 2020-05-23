@@ -1,6 +1,7 @@
 - hosts: "{{server}}"
   become: true
   serial: 1
+  force: yes
 
   roles:
     - role: "apache"
