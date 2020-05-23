@@ -1493,3 +1493,20 @@ The offending line appears to be:
     "changed": false,
     "msg": "Local modifications exist in repository (force=no)."
 }
+2020-05-24 00:18:04,876 p=28727 u=root n=ansible | ERROR! 'force' is not a valid attribute for a Play
+
+The error appears to be in '/kishore/wrap.yaml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- hosts: "localhost"
+  ^ here
+
+2020-05-24 00:18:28,654 p=28759 u=root n=ansible | PLAY [localhost] ************************************************************************************************************************************
+2020-05-24 00:18:28,690 p=28759 u=root n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************
+2020-05-24 00:18:31,027 p=28759 u=root n=ansible | ok: [localhost]
+2020-05-24 00:18:31,107 p=28759 u=root n=ansible | TASK [apache : installing packages] *****************************************************************************************************************
+2020-05-24 00:18:32,445 p=28759 u=root n=ansible |  [ERROR]: User interrupted execution
+
