@@ -23,4 +23,3 @@
 
 - name: Importing yaml
   import_tasks: sam.yaml
-  when: need_vim == "yes"  and ansible_os_family == "RedHat"
