@@ -7,5 +7,4 @@
     - role: "apache"
       vars:
         ports: 9090
-        need_vim: "yes"
     - "nginx"
