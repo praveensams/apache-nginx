@@ -1,4 +1,4 @@
-- hosts: {{server}}
+- hosts: "{{server}}"
   become: true
   serial: 1
 

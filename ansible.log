@@ -1471,3 +1471,25 @@ The offending line appears to be:
 2020-05-17 12:07:25,248 p=20514 u=root n=ansible | node01                     : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2020-05-17 12:07:25,248 p=20514 u=root n=ansible | node02                     : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2020-05-17 12:07:25,249 p=20514 u=root n=ansible | node03                     : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-05-23 23:55:01,791 p=27351 u=root n=ansible | Starting Ansible Pull at 2020-05-23 23:55:01
+2020-05-23 23:55:01,792 p=27351 u=root n=ansible | /usr/local/bin/ansible-pull -U https://github.com/praveensams/apache-nginx.git wrap.yaml -e server=localhost
+2020-05-23 23:55:04,234 p=27357 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ansible
+
+2020-05-23 23:55:06,375 p=27357 u=root n=ansible | [WARNING]: Your git version is too old to fully support the depth argument. Falling back to full checkouts.
+
+2020-05-23 23:55:06,376 p=27357 u=root n=ansible | localhost | FAILED! => {
+    "before": "7faeb97e9532bb031536451df93eb67994cd5ad1",
+    "changed": false,
+    "msg": "Local modifications exist in repository (force=no)."
+}
+2020-05-23 23:56:55,139 p=27491 u=root n=ansible | Starting Ansible Pull at 2020-05-23 23:56:55
+2020-05-23 23:56:55,140 p=27491 u=root n=ansible | /usr/local/bin/ansible-pull -U https://github.com/praveensams/apache-nginx.git wrap.yaml -e server=localhost
+2020-05-23 23:56:57,747 p=27497 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ansible
+
+2020-05-23 23:57:00,100 p=27497 u=root n=ansible | [WARNING]: Your git version is too old to fully support the depth argument. Falling back to full checkouts.
+
+2020-05-23 23:57:00,100 p=27497 u=root n=ansible | localhost | FAILED! => {
+    "before": "7faeb97e9532bb031536451df93eb67994cd5ad1",
+    "changed": false,
+    "msg": "Local modifications exist in repository (force=no)."
+}
