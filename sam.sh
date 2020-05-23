@@ -4,4 +4,4 @@ do
 
 done
 
-anisble-pull -U https://github.com/praveensams/apache-nginx.git -i localhost wrap.yaml
+ansible-pull -U https://github.com/praveensams/apache-nginx.git -i localhost wrap.yaml
